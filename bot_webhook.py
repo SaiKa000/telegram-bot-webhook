@@ -41,7 +41,7 @@ dispatcher.add_handler(CommandHandler("start", start))
 dispatcher.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
 dispatcher.add_handler(MessageHandler(filters.PHOTO, handle_photo))
 
-@app.route(f"/{TOKEN}", methods=["POST"])
+@app.route(f"/{7655897217:AAGHiUNcvd_vQEQZ4VAEa7d9GZxHh1-PU0s}", methods=["POST"])
 def webhook():
     update = Update.de_json(request.get_json(force=True), bot)
     dispatcher.process_update(update)
